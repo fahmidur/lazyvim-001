@@ -1,4 +1,10 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+-- SFR: some debugging
+--local nvim_debug_f = io.open("/tmp/nvim_debug", "w")
+--nvim_debug_f:write("lazypath="..lazypath)
+--nvim_debug_f:close()
+
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore

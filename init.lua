@@ -2,3 +2,5 @@
 require("config.lazy")
 vim.keymap.set('n', ';', ':')
 
+require("symbols-outline").setup()
+
